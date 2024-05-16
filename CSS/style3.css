@@ -1,0 +1,92 @@
+:root{
+    --clr--blue : #1e2959;
+    --clr--green : #00bf63;
+    --clr--white : white;
+    --clr--light : #dae5f9;
+    --clr--dark : #303633;
+    --clr--black : #000000;
+    --clr--t-gray :#b6b8b787;
+    --clr--t-green : #a2efcabc;
+
+}
+
+/*VEGETABLE PAGE STYLING*/
+
+.vegetable_products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin: 25px;
+    
+}
+
+/*--------------------------------------------------------------*/
+.provider{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,auto));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+/*--------------------------------------------------------------*/
+
+
+
+/*DAIRY PRODUCTS PAGE STYLING*/
+
+.dairy-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*COSMETICS & SKIN CARE PRODUCTS PAGE STYLING*/
+
+.cosmetics_skincare-products{
+    border-style: hidden;
+    border-spacing: 45px;
+}
+
+@media (max-width: 900px){
+
+    .cosmetics_skincare-products,
+    .cosmetics_skincare-products tr{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+   
+}
+
+
+/*ORDER PAGE STYLING*/
+
+/*.order_products{
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+
+}
+
+.order_products td, .order_products th{
+    border: 2px solid var(--clr--black);
+    text-align: center;
+}
+
+.order_products th{
+    background-color: var(--clr--blue);
+    color: var(--clr--white);
+    padding: 15px;
+}*/
+
+

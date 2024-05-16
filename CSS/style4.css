@@ -1,0 +1,116 @@
+/*Register-page styling*/
+
+:root{
+    --clr--blue : #1e2959;
+    --clr--green : #00bf63;
+    --clr--white : white;
+    --clr--light : #dae5f9;
+    --clr--dark : #303633;
+    --clr--black : #000000;
+    --clr--light-gray :#d8d8d8 ;
+    --clr--dark-gray : #848484 ;
+    --clr--gray : #bbbbbb ;
+    --clr--bg-color : #d8d8d866;
+
+}
+
+main{
+    background: url(../IMAGE/registerpage_background_img.png);
+    background-size: cover;
+
+
+}
+
+.form-box{
+    position: static; /*if relative error occured*/
+    height: 500px;
+    background-color:#9eada634;
+
+}
+
+.head span{
+    color: var(--clr--light);
+    font-size: small;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.head span a{
+    font-weight: 500;  /*Boldness*/
+    color: var(--clr--white);
+    margin-left: 10px;
+}
+
+h1{
+    color: var(--clr--light);
+    text-align: center;
+    padding: 10px 0 30px 0 ; /*top right bottom left*/
+
+}
+
+.input_field{
+    font-size: 15px;
+    background-color: var(--clr--bg-color);
+    height: 35px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    
+    padding: 0 10px 0 50px;
+    border: none;
+    border-radius: 0 20px 20px 20px;
+    outline: none;  /*While clicking the input field the outline will be invisible*/
+    
+}
+
+::-webkit-input-placeholder{
+    color: var(--clr--dark);   /*Input placeholder color*/
+}
+
+.input-box i{
+    position: relative;
+    top:-30px;
+    left: 10px;
+    color: var(--clr--dark);
+   
+}
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--clr--black);
+    height: 40px;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    border-radius: 0 20px 20px 20px;
+    border: none;
+    background-color: var(--clr--gray);
+    cursor: pointer;
+
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: small;
+    color: var(--clr--white);
+
+}
+
+.foot .one{
+    display: flex;
+    gap: 5px;   /*Between box and text*/
+
+}
+
+.two label a{
+    text-decoration: none;
+    color: var(--clr--white);
+}
+
+.two label a:hover{
+    text-decoration: underline;
+}
