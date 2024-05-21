@@ -5,11 +5,13 @@
     --clr--light : #dae5f9;
     --clr--dark : #303633;
     --clr--black : #000000;
+    --clr--yellow: #ffd43b;
 
 }
 
 *{
     font-family: "poppins" ,sans-serif;
+    margin: auto;
 }
 
 main{
@@ -22,15 +24,26 @@ main{
     height: 100px;
 }*/
 
+#logo-image{
+    width: 30vw;
+    height: auto ;
+}
+
 .header-1{
     display: flex;
     justify-content:space-around;
     align-items: center;
+    flex-wrap:wrap;
     padding: 5px;
     background-color:var(--clr--white);
     margin:2px;
     margin-bottom: 0;
 
+}
+
+.header-1-2{
+    display: flex;
+    justify-content:space-evenly;
 }
 
 .search-box{
@@ -41,8 +54,8 @@ main{
     align-items: center;
     padding: 0px 5px 0px 20px;
     border-radius: 30px;
-    width: 500px;
-    margin-right:40px ;
+    width: 45vw;       /*500px*/
+    
 }
 
 /*Input Search*/
@@ -58,7 +71,7 @@ main{
 }
 
 #search-button{
-    width: 100px;
+    width: 8vw;
     height: 30px;
     /*border-radius: 30px;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
     border-radius: 0 20px 20px 20px;
@@ -71,7 +84,7 @@ main{
 #search-button:hover{
     background-color: var(--clr--white);
     color: var(--clr--blue);
-    transition: all ease 0.3s;
+    /*transition: all ease 0.3s;*/
 }
 
 
@@ -87,7 +100,8 @@ main{
 }*/
 
 .location{
-    width: 180px;
+    width:15vw;      /*180px;*/
+    padding-left:20px; /*1vw;*/
     height: 30px;
     border-radius: 0 20px 20px 20px;
     background-color: var(--clr--light);
@@ -102,9 +116,9 @@ main{
 }
 
 .select_location i{
-    position: fixed;
-    right: 220px;
-    top: 65px;
+    position:relative;
+    right: -27px;
+    font-size:larger;
     color: var(--clr--blue);
     
 }
@@ -125,17 +139,31 @@ main{
     
 }*/
 
-.menu-bar{
-    /*font-size: 20px;*/
+/*.menu-bar{
+    /*font-size: 20px;
     color: var(--clr--blue);
     cursor: pointer;
     display: none;
     position: absolute;
 
+}*/
+
+/*#check{
+    display: none;
+}*/
+
+#menu-bar{
+    display: none;
 }
 
-#check{
+.header-2 .menu{
+    font-size: 20px;
+    color: var(--clr--blue);
+    cursor: pointer;
     display: none;
+    padding-right: 20px;
+
+
 }
 
 .navigation{
@@ -146,7 +174,7 @@ main{
     
 }
 
-.header-2{
+.header-2 .navbar{  /**888888888888888888888888888*/
     background-color:var(--clr--white);
     padding: 0;
     padding-bottom: 15px;
@@ -187,8 +215,9 @@ nav ul li a:hover,
     display: none;
     background-color:var(--clr--light);
     border-radius: 0 20px 20px 20px;
-    width: 250px;
+    width:40vw ; /*250px*/
     margin-top: 15px;
+    border: var(--clr--blue) 5px solid;
 }
 
 .dropdown_login{
@@ -414,6 +443,7 @@ h1{
 
 /*Common for all pages boxes in website starts ....*/
 .box a{
+    display: inline-block;
     padding: 10px;
     outline: 2px solid var(--clr--dark);
     border-radius: 0 20px 20px 20px;
@@ -435,6 +465,8 @@ h1{
     background: var(--clr--light);
     border-radius: 10px;
     text-align: center;
+    width: 200px;
+    height: 420px;
     padding: 20px;
     margin: 10px;
     /*outline-offset: -1rem;
@@ -474,10 +506,10 @@ h1{
 
 .about_supermarket{
     max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 40px;
+    margin-right: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20rem,auto));
+    grid-template-columns: repeat(auto-fit,minmax(320px,auto));
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -485,11 +517,26 @@ h1{
     
 }
 
-.supermarket_summery{
+/*.about_supermarket{
+    display: flex;
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /*----------------------------------------------------------------------------*/
+
+
+#grocies-img{
+    width: 500px;
+    height: auto;
+}
+
+/*.supermarket_summery{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1px;
-}
+}*/
 
 .supermarket_image figcaption{
     text-align:center;
@@ -517,111 +564,104 @@ h1{
     text-align: center;
 }
 
+.customer-review{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.review{
+    background-color: var(--clr--light);
+    
+}
+
+.review img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+
+.rating .fa-star{
+    color: var(--clr--yellow);
+    margin: 2px;
+}
+
+
+
 
 /*Mobile responsive*/
 
 /*Using media query to add a breakpoint at 800px*/
 
-/*@media(max-width:800px){
-    .menu-bar{
-        display: inline-flex;
+@media(max-width:800px){
+
+    header{
+        padding: 20px;
     }
 
-    #check:checked~.menu-bar #menu-icon{
+    .header-1 .header-1-2 #search-button span{
         display: none;
     }
 
-    .menu-bar #close-icon{
-        display: none;
-    }
-
-    .check:checked~.menu-bar #close-icon{
-        display: block;
+    .header-2 .menu{
+        display: initial;
     }
 
     .navbar{
         position: absolute;
-        margin: auto;
+        width:86vw ; 
+        display: none;
+        border-radius: 0 20px 20px 20px;
+        border: 5px solid var(--clr--blue);
 
-        left: 0;
-        width: 100%;
-        
-        
     }
 
-    .navigation{
-        display: block;
-       
+    .navbar .dropdown_products{
+        border: 0;
+    }
+
+    
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
         
     }
 
     .navbar ul li{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
+        
+        margin: 0;
+        padding: 15px 30px 15px 30px;
+
+
     }
 
-    #check:checked~.navber{
-        height: 17.7rem;
-    }
-
-
-
-}*/
-
-
-/*@media(max-width:800px){
-
-
-
-    #menu-icon{
-    display: block; 
-      /*display:initial;*/
-    
-
-
-
-
-/*.navbar{
-    position: absolute;
-    background-color: var(--clr--white);
-    border-top: 1px solid var(--clr--black);
-    width: 100%;
-    
-}*/
-
- /*   .navbar ul{
-        position:relative;  /*absolute*/
-        /*display: flex;
-        flex-direction: column;
-        background-color: var(--clr--white);
-        border: 1px solid var(--clr--blue);
-        border-radius: 0 20px 20px 20px;*/
-
-
-    /*.navbar ul li{
-        padding: 20px;
-        width: 100%;
+    .navbar ul li .active{
+        padding: auto;
+        
     }
 
     .navbar ul li ul{
-        margin: 10px;
         position: relative;
-        background-color: var(--clr--white);
+        padding-left: 20px;
+        
+    }
+
+    .navbar ul li ul li{
+        width: 60vw;
+    }
+
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+        background-color: var(--clr--light);
 
     }
 
-    .dropdown_login{
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
+}
 
-
-
-    #menu-icon:checked~.navbar{
-        display: block;
-
-    }*/
 
 
 

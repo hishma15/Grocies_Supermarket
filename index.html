@@ -46,33 +46,37 @@
                 </a>
             </div>
 
-            <div>
-                <form class="search-box">
-                    <input type="search" placeholder="Search for products..." name="search" id="search">
-                    <button type="submit" name="search-button" id="search-button"> Search <i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
+            <section class="header-1-2">
+                <div>
+                    <form class="search-box">
+                        <input type="search" placeholder="Search for products..." name="search" id="search">
+                        <button type="submit" name="search-button" id="search-button"><span> Search </span><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
 
-            <div class="select_location">
-                <i class="fa-solid fa-location-dot"></i>
-                <select class="location">
-                    <option value="" id="search_locaion">Select your location</option>
-                    <option value="colombo">Colombo</option>
-                    <option value="kandy">Kandy</option>
-                    <option value="kurunagala">Kurunagala</option>
-                </select>
-            </div>
+                <div class="select_location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select class="location">
+                        <option value="" id="search_locaion">Select your location</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="kurunagala">Kurunagala</option>
+                    </select>
+                </div>
+
+            </section>
 
         </section>
 
         <!--Navbar,menu-->
         <section class="header-2">
 
-            <input type="checkbox" id="check">
-            <label for="check" class="menu-bar">
-            <i class="fa-solid fa-bars" id="menu-icon"></i>
-            <i class="fa-solid fa-xmark" id="close-icon"></i>
-            </label>
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+
+                <br>
 
             <nav class="navbar">
 
@@ -367,6 +371,63 @@
             </ol>
         </div>
 
+        <section>
+
+            <h2>What Our Beloved Customers</h2>
+            <h2>Say About Us!</h2>
+
+            <section class="customer-review">
+
+                <!--Profile photos took from https://www.freepik.com/search?ai=excluded&format=search&last_filter=query&last_value=profile+photo&query=profile+photo&type=photo-->
+                <article class="review">
+                    <img src="./IMAGE/person-1.jpg" alt="Person 1 image">
+                    <div class="review-text">
+                        <strong>Olivia Lily</strong>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                </article>
+
+                <article class="review">
+                    <img src="./IMAGE/person-2.jpg" alt="Person 2 image">
+                    <div class="review-text">
+                        <strong>William Jack</strong>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+
+                </article>
+
+                <article class="review">
+                    <img src="./IMAGE/person-3.jpg" alt="Person 3 image">
+                    <div class="review-text">
+                        <strong>Amelia Lucy</strong>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    
+                </article>
+
+            </section>
+
+        </section>
+
     </main>
 
     <!--footer part of the page-->
@@ -439,6 +500,7 @@
 
         <section class="footer-3">
             <p>&copy; copyright 2024 Grocies Supermarket Services (Pvt) Ltd. All rights Reserved. </p>
+            <p id="designer">Designed by: Hishma Hameed</p>
         </section>
 
     </footer>

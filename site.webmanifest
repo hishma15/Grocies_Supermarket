@@ -1,6 +1,7 @@
 {
     "name": "Grocies Supermarket",
     "short_name": "Grocies Supermarket",
+    "start_url": "./index.html",
     "icons": [
         {
             "src": "./android-chrome-192x192.png",

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./CSS/style1.css" type="text/css">
     <link rel="stylesheet" href="./CSS/style2.css" type="text/css">
     <link rel="stylesheet" href="./CSS/style3.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/style4.css" type="text/css">
 
     <!--Font styles from google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,28 +46,37 @@
                 </a>
             </div>
 
-            <div>
-                <form class="search-box">
-                    <input type="search" placeholder="Search for products..." name="search" id="search">
-                    <button type="submit" name="search-button" id="search-button"> Search <i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
+            <section class="header-1-2">
+                <div>
+                    <form class="search-box">
+                        <input type="search" placeholder="Search for products..." name="search" id="search">
+                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
 
-            <div class="select_location">
-                <i class="fa-solid fa-location-dot"></i>
-                <select class="location">
-                    <option value="" id="search_locaion">Select your location</option>
-                    <option value="colombo">Colombo</option>
-                    <option value="kandy">Kandy</option>
-                    <option value="kurunagala">Kurunagala</option>
-                </select>
-            </div>
+                <div class="select_location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select class="location">
+                        <option value="" id="search_locaion">Select your location</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="kurunagala">Kurunagala</option>
+                    </select>
+                </div>
+
+            </section>
 
         </section>
 
-
         <!--Navbar,menu-->
         <section class="header-2">
+
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+
+                <br>
 
             <nav class="navbar">
 
@@ -74,6 +84,7 @@
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./aboutus.html">ABOUT US</a></li>
                     <li class="dropdown">
+
                         <a href="./products.html">PRODUCTS</a>
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
@@ -83,12 +94,13 @@
                             <li><a href="#">Meat & Seafood</a></li>
                             <li><a href="#">Baking & cooking Ingrediants</a></li>
                         </ul>
+
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
                         <form class="dropdown_login">
 
-                            <div class="head">    
+                            <div class="head"> 
                                 <span>Don't have an Account ? <a href="./register.html" id="sign_up">Sign Up</a> </span>
                                 <h1>Login</h1>
                             </div>
@@ -140,58 +152,131 @@
 
         <section class="order-products">
 
-            <!---------------------------------------------------------->
+            <table class="order_table">
+                <thead>
+                    <th>PRODUCT</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>TOTAL</th>
+                    <th>ACTION</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-name"><img src="./IMAGE/tomato.jpg" alt="Tomatoes"><span>Fresh Tomatoes</span></td>
+                        <td>Rs.480.00<span>/1kg</span></td>
+                        <td><input type="number" value="1"></td>
+                        <td>Rs.480.00</td>
+                        <td class="action"><button class="cart"><i class="fa-solid fa-cart-shopping"></i></button><button class="cancel"><i class="fa-solid fa-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name"><img src="./IMAGE/eggs.jpg" alt="Eggs"><span>Farm Fresh Eggs</span></td>
+                        <td>Rs.650.00<span>/10</span></td>
+                        <td><input type="number" value="1"></td>
+                        <td>Rs.650.00</td>
+                        <td class="action"><button class="cart"><i class="fa-solid fa-cart-shopping"></i></button><button class="cancel"><i class="fa-solid fa-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="product-name"><img src="./IMAGE/himalyaa-facewash.jpg" alt="Facewash"><span>Himalaya Facewash</span></td>
+                        <td>Rs.1190.00<span>/100ml</span></td>
+                        <td><input type="number" value="1"></td>
+                        <td>Rs.1190.00</td>
+                        <td class="action"><button class="cart"><i class="fa-solid fa-cart-shopping"></i></button><button class="cancel"><i class="fa-solid fa-xmark"></i></button></td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <td colspan="3">SUB TOTAL : </td>
+                        <td>Rs.2320.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">DELIVERY CHARGE : </td>
+                        <td>RS.200.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">TOTAL : </td>
+                        <td>Rs.2520.00</td>
+                    </tr>
+                </tfoot>
+            </table>
             
         </section>
 
-        <!--Total amount of ordered products-->
+        <!--Order Actions-->
 
-        <section class="order-price">
+        <section class="final-action">
 
-            <!------------------------------------------------------------------>
-
+            <button type="button" value="Clear-Cart" id="clear_cart">Clear Cart </button>
+            <button type="button" value="Update-cart" id="update_cart">Update Cart</button>
+            
         </section>
 
         <!--User input Description-->
-        <div class="user-input_des">
+        <section class="user-input_des">
 
-            <form>
+            <label>Write a message regarding your order requirement : </label>
 
-            </form>
+            <textarea></textarea>
 
-        </div>
+           <!-- <form>
+                <input type="textarea" class="description" placeholder="Write a message.....">
+            </form>-->
+
+        </section>
+
+        <br>
 
         <!--Checkout section-->
         <section class="pre-checkout">
             
             <!--Payment Method Selection-->
             <form>
+                
+                <br>
+
                 <div class="payment-method">
                     <label>Select your payment method: </label>
                     <br>
-                    <input type="radio" id="debit"><label for="debit">Debit Card</label>
+                    <input type="radio" name="payment" id="debit"><label for="debit">Debit Card</label>
                     <br>
-                    <input type="radio" id="credit"><label for="credit">Credit Card</label>
+                    <input type="radio" name="payment" id="credit"><label for="credit">Credit Card</label>
                     <br>
-                    <input type="radio" id="cash"><label for="cash">Cash on Delivery</label>       
+                    <input type="radio" name="payment" id="cash"><label for="cash">Cash on Delivery</label>       
                     
                 
                 </div>
 
-                <div class="delivery-info">
+                <br>
+
+                <section class="delivery-info">
                 
-                    <label>Enter your delivery Address: </label>
-                    <input type="text" placeholder="Delivery Address">
-                <br>
-                    <label>Enter your phone number: </label>
-                    <input type="text" placeholder="Phone Number">
-                <br>
-                    <label>Enter your Loyalty card Number: </label>
-                    <input type="text" placeholder="Loyalty card Number">
-                <br>
-                    <input type="button" value="submit">
+                    <div>
+                        <label>Enter your delivery Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" placeholder="Delivery Address" required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Enter your phone number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" placeholder="Phone Number" required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Enter your Loyalty card Number: </label>
+                        <input type="text" placeholder="Loyalty card Number">
+                    </div>
+                
+                    <br>
+
+                    <div>
+                        <input type="submit" value="submit" class="deliver-btn submit">
+                        <input type="reset" value="Reset" class="deliver-btn reset">
+                    </div>
             
-                </div>
+                </section>
 
             </form>
 
@@ -199,15 +284,26 @@
 
         <section class="checkout">
             <div class="rate_us">
-                <h3>Rate Us</h3>
-                <i class="fa-regular fa-face-frown"></i>
+                <h2>Rate Us</h2>
+                <br>
+                <!--<i class="fa-regular fa-face-frown"></i>
                 <i class="fa-regular fa-face-frown-open"></i>
                 <i class="fa-regular fa-face-meh"></i>
                 <i class="fa-regular fa-face-smile"></i>
-                <i class="fa-regular fa-face-laugh-beam"></i>
+                <i class="fa-regular fa-face-laugh-beam"></i>-->
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <section class="user-input_des">
+                    <label>Write your feedback: </label>
+                    <textarea></textarea>
+                </section>
             </div>
             <form>
-                <input type="submit" value="CHECK-OUT">
+                <input type="submit" value="CHECK-OUT" class="final-checkout">
             </form>
         </section>
 
@@ -283,6 +379,7 @@
 
         <section class="footer-3">
             <p>&copy; copyright 2024 Grocies Supermarket Services (Pvt) Ltd. All rights Reserved. </p>
+            <p id="designer">Designed by: Hishma Hameed</p>
         </section>
 
     </footer>

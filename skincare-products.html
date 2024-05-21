@@ -34,7 +34,7 @@
 </head>
 <body>
 
-    <!--header part of the page.--------------------------------------------------------------->
+    <!--header part of the page.-->
 
     <header>
 
@@ -47,28 +47,37 @@
                 </a>
             </div>
 
-            <div>
-                <form class="search-box">
-                    <input type="search" placeholder="Search for products..." name="search" id="search">
-                    <button type="submit" name="search-button" id="search-button"> Search <i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
+            <section class="header-1-2">
+                <div>
+                    <form class="search-box">
+                        <input type="search" placeholder="Search for products..." name="search" id="search">
+                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
 
-            <div class="select_location">
-                <i class="fa-solid fa-location-dot"></i>
-                <select class="location">
-                    <option value="" id="search_locaion">Select your location</option>
-                    <option value="colombo">Colombo</option>
-                    <option value="kandy">Kandy</option>
-                    <option value="kurunagala">Kurunagala</option>
-                </select>
-            </div>
+                <div class="select_location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select class="location">
+                        <option value="" id="search_locaion">Select your location</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="kurunagala">Kurunagala</option>
+                    </select>
+                </div>
+
+            </section>
 
         </section>
 
-
         <!--Navbar,menu-->
         <section class="header-2">
+
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+
+                <br>
 
             <nav class="navbar">
 
@@ -76,6 +85,7 @@
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./aboutus.html">ABOUT US</a></li>
                     <li class="dropdown">
+
                         <a href="./products.html" class="active">PRODUCTS</a>
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
@@ -85,12 +95,13 @@
                             <li><a href="#">Meat & Seafood</a></li>
                             <li><a href="#">Baking & cooking Ingrediants</a></li>
                         </ul>
+
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
                         <form class="dropdown_login">
 
-                            <div class="head">    
+                            <div class="head"> 
                                 <span>Don't have an Account ? <a href="./register.html" id="sign_up">Sign Up</a> </span>
                                 <h1>Login</h1>
                             </div>
@@ -148,9 +159,9 @@
 
                     <img src="./IMAGE/bodyspray-women.jpg" alt="Body Spray Women">
                     <h3>Body Spray women</h3>
-                    <span>1Kg</span>
+                    <span>150ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.2850.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -167,9 +178,9 @@
 
                     <img src="./IMAGE/bodyspray-men.jpg" alt="Body Spray Men">
                     <h3>Body Spray Men</h3>
-                    <span>1Kg</span>
+                    <span>150ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.2949.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -186,9 +197,9 @@
 
                     <img src="./IMAGE/dove_bodywash.jpg" alt="Dove Bodywash">
                     <h3>Dove BodyWash</h3>
-                    <span>1Kg</span>
+                    <span>400ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.2390.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -205,9 +216,9 @@
 
                     <img src="./IMAGE/dove_conditioner.jpg" alt="Dove Conditioner">
                     <h3>Dove Conditioner</h3>
-                    <span>1Kg</span>
+                    <span>180ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.360.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -228,9 +239,9 @@
 
                     <img src="./IMAGE/dove_shampoo.jpg" alt="Dove Shampoo">
                     <h3>Dove Shampoo</h3>
-                    <span>1Kg</span>
+                    <span>180ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.750.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -247,9 +258,9 @@
 
                     <img src="./IMAGE/dove_soap.jpg" alt="Dove Soap">
                     <h3>Dove Soap</h3>
-                    <span>1Kg</span>
+                    <span>100g</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.600.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -266,9 +277,9 @@
 
                     <img src="./IMAGE/himalyaa-facewash.jpg" alt="Himalaya Facewash">
                     <h3>Himalaya Facewash</h3>
-                    <span>1Kg</span>
+                    <span>100ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.1190.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -285,9 +296,9 @@
 
                     <img src="./IMAGE/intensive_cream.jpg" alt="Dove Intensive Cream">
                     <h3>Dove Intensive Cream</h3>
-                    <span>1Kg</span>
+                    <span>75ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.1499.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -308,9 +319,9 @@
 
                     <img src="./IMAGE/baby_soap.jpg" alt="Baby Soap">
                     <h3>Baby Soap</h3>
-                    <span>1Kg</span>
+                    <span>125g</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.799.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -327,9 +338,9 @@
 
                     <img src="./IMAGE/loreal-conditioner.jpg" alt="Loreal Conditioner">
                     <h3>Loreal Conditioner</h3>
-                    <span>1Kg</span>
+                    <span>400ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.3550.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -346,9 +357,9 @@
 
                     <img src="./IMAGE/loreal-shampoo.jpg" alt="Loreal Shampoo">
                     <h3>Loreal Shampoo</h3>
-                    <span>1Kg</span>
+                    <span>400ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.3999.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -365,9 +376,9 @@
 
                     <img src="./IMAGE/baby_powder.jpg" alt="Baby Powder">
                     <h3>Baby Powder</h3>
-                    <span>1Kg</span>
+                    <span>100g</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.1125.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -388,9 +399,9 @@
 
                     <img src="./IMAGE/baby_soft_cream.jpg" alt="Baby Soft Cream">
                     <h3>Baby Soft Cream</h3>
-                    <span>1Kg</span>
+                    <span>100ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.1675.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -407,9 +418,9 @@
 
                     <img src="./IMAGE/baby_cologne.jpg" alt="Baby Cologne">
                     <h3>Baby Cologne</h3>
-                    <span>1Kg</span>
+                    <span>100ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.1790.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -426,9 +437,9 @@
 
                     <img src="./IMAGE/baby_lotion.jpg" alt="Baby Lotion">
                     <h3>Baby Lotion</h3>
-                    <span>1Kg</span>
+                    <span>300ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.1830.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -445,9 +456,9 @@
 
                     <img src="./IMAGE/baby_oil.jpeg" alt="Baby Oil">
                     <h3>Baby Oil</h3>
-                    <span>1Kg</span>
+                    <span>300ml</span>
                     <P>10% off</P>
-                    <div class="price">Rs.310.00</div>
+                    <div class="price">Rs.2249.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -538,6 +549,7 @@
 
         <section class="footer-3">
             <p>&copy; copyright 2024 Grocies Supermarket Services (Pvt) Ltd. All rights Reserved. </p>
+            <p id="designer">Designed by: Hishma Hameed</p>
         </section>
 
     </footer>

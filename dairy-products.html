@@ -32,9 +32,9 @@
 </head>
 <body>
 
-     <!--header part of the page.--------------------------------------------------------------->
+    <!--header part of the page.-->
 
-     <header>
+    <header>
 
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
@@ -45,28 +45,37 @@
                 </a>
             </div>
 
-            <div>
-                <form class="search-box">
-                    <input type="search" placeholder="Search for products..." name="search" id="search">
-                    <button type="submit" name="search-button" id="search-button"> Search <i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
+            <section class="header-1-2">
+                <div>
+                    <form class="search-box">
+                        <input type="search" placeholder="Search for products..." name="search" id="search">
+                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
 
-            <div class="select_location">
-                <i class="fa-solid fa-location-dot"></i>
-                <select class="location">
-                    <option value="" id="search_locaion">Select your location</option>
-                    <option value="colombo">Colombo</option>
-                    <option value="kandy">Kandy</option>
-                    <option value="kurunagala">Kurunagala</option>
-                </select>
-            </div>
+                <div class="select_location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select class="location">
+                        <option value="" id="search_locaion">Select your location</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="kurunagala">Kurunagala</option>
+                    </select>
+                </div>
+
+            </section>
 
         </section>
 
-
         <!--Navbar,menu-->
         <section class="header-2">
+
+                <input type="checkbox" id="menu-bar">
+                <label for="menu-bar" class="menu">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </label>
+
+                <br>
 
             <nav class="navbar">
 
@@ -74,6 +83,7 @@
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./aboutus.html">ABOUT US</a></li>
                     <li class="dropdown">
+
                         <a href="./products.html" class="active">PRODUCTS</a>
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
@@ -83,12 +93,13 @@
                             <li><a href="#">Meat & Seafood</a></li>
                             <li><a href="#">Baking & cooking Ingrediants</a></li>
                         </ul>
+
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
                         <form class="dropdown_login">
 
-                            <div class="head">    
+                            <div class="head"> 
                                 <span>Don't have an Account ? <a href="./register.html" id="sign_up">Sign Up</a> </span>
                                 <h1>Login</h1>
                             </div>
@@ -152,9 +163,9 @@
 
                 <img src="./IMAGE/eggs.jpg" alt="Eggs">
                 <h3>Eggs</h3>
-                <span>1Kg</span>
+                <span>10</span>
                 <P>10% off</P>
-                <div class="price">Rs.310.00</div>
+                <div class="price">Rs.650.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -209,9 +220,9 @@
 
                 <img src="./IMAGE/ghee.jpg" alt="Ghee">
                 <h3>Ghee</h3>
-                <span>1Kg</span><!------------>
+                <span>375ml</span><!------------>
                 <P>10% off</P>
-                <div class="price">Rs.310.00</div>
+                <div class="price">Rs.2300.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -228,9 +239,9 @@
 
                 <img src="./IMAGE/milk.jpg" alt="Fresh Milk">
                 <h3>Fresh Milk</h3>
-                <span>1 l</span>
+                <span>200ml</span>
                 <P>10% off</P>
-                <div class="price">Rs.1710.00</div>
+                <div class="price">Rs.150.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -246,7 +257,7 @@
             <section class="box">
 
                 <img src="./IMAGE/icecream.jpg" alt="Ice-cream">
-                <h3>Ice-Cream</h3>
+                <h3>Magnum Ice-Cream</h3>
                 <span>480 ml</span>
                 <P>10% off</P>
                 <div class="price">Rs.4990.00</div>
@@ -304,9 +315,9 @@
 
                 <img src="./IMAGE/drinking_yoghurt.jpg" alt="Drinking Youghurt">
                 <h3>Drinking Youghurt</h3><!------------>
-                <span>1Kg</span>
+                <span>1</span>
                 <P>10% off</P>
-                <div class="price">Rs.310.00</div>
+                <div class="price">Rs.120.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -323,9 +334,9 @@
 
                 <img src="./IMAGE/fresh-milk.jpg" alt="Fresh Milk">
                 <h3>Fresh Milk</h3>  <!-------->
-                <span>1Kg</span>
+                <span>1l</span>
                 <P>10% off</P>
-                <div class="price">Rs.310.00</div>
+                <div class="price">Rs.560.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -450,6 +461,7 @@
 
         <section class="footer-3">
             <p>&copy; copyright 2024 Grocies Supermarket Services (Pvt) Ltd. All rights Reserved. </p>
+            <p id="designer">Designed by: Hishma Hameed</p>
         </section>
 
     </footer>

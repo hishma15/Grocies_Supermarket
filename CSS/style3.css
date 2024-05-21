@@ -14,7 +14,10 @@
 
 .vegetable_products{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr)) ;
+    justify-items: center;
+    /*-------------------------------------------------------------------------------*/
     gap: 40px;
     margin: 25px;
     
@@ -69,24 +72,6 @@
 }
 
 
-/*ORDER PAGE STYLING*/
 
-/*.order_products{
-    border-collapse: collapse;
-    width: 70%;
-    margin: auto;
-
-}
-
-.order_products td, .order_products th{
-    border: 2px solid var(--clr--black);
-    text-align: center;
-}
-
-.order_products th{
-    background-color: var(--clr--blue);
-    color: var(--clr--white);
-    padding: 15px;
-}*/
 
 
