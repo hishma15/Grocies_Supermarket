@@ -41,20 +41,22 @@
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
 
+            <!--Logo Image with home page link-->
             <div id="logo_img">
                 <a href="./index.html">
                 <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
                 </a>
             </div>
 
+            <!--Location selecting option-->
             <section class="header-1-2">
-                <div>
-                    <form class="search-box">
-                        <input type="search" placeholder="Search for products..." name="search" id="search">
-                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+                <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
                     <select class="location">
@@ -72,13 +74,15 @@
         <!--Navbar,menu-->
         <section class="header-2">
 
+                <!--Menu bar-->
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </label>
 
                 <br>
 
+            <!--Navigation bar-->
             <nav class="navbar">
 
                 <ul class="navigation">
@@ -87,6 +91,7 @@
                     <li class="dropdown">
 
                         <a href="./products.html" class="active">PRODUCTS</a>
+                        <!--Products options as dropdown-->
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
@@ -98,6 +103,7 @@
 
                     </li>
                     <li class="dropdown">
+                        <!--Sign in option as dropdown-->
                         <a href="./register.html">REGISTER/LOGIN</a>
                         <form class="dropdown_login">
 
@@ -107,12 +113,12 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="text" class="input_field" placeholder="Username or Email">
+                                <input type="text" class="input-field" placeholder="Username or Email">
                                 <i class="fa-solid fa-user"></i>
                             </div>
 
                             <div class="input-box">
-                                <input type="password" class="input_field" placeholder="Password">
+                                <input type="password" class="input-field" placeholder="Password">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
             
@@ -146,9 +152,9 @@
 
     <!--Main part of the page---------------------------------------------------------------------------------->
 
-    <main>
+    <main class="skin_care">
 
-        <h2>Cosmetics & Skincare products</h2>
+        <h2>COSMETICS & SKINCARE PRODUCTS </h2>
 
         <!--Cosmetics & Skincare products aranged using table-->
         <table class="cosmetics_skincare-products">
@@ -157,17 +163,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>10% off</p>
+                    </div>
+
                     <img src="./IMAGE/bodyspray-women.jpg" alt="Body Spray Women">
                     <h3>Body Spray women</h3>
                     <span>150ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.2850.00</div>
+                    <div class="price">Rs.2565.00<del>Rs.2850.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -176,17 +186,20 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/bodyspray-men.jpg" alt="Body Spray Men">
                     <h3>Body Spray Men</h3>
                     <span>150ml</span>
-                    <P>10% off</P>
                     <div class="price">Rs.2949.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -195,17 +208,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/dove_bodywash.jpg" alt="Dove Bodywash">
                     <h3>Dove BodyWash</h3>
                     <span>400ml</span>
-                    <P>10% off</P>
                     <div class="price">Rs.2390.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -214,17 +231,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>20% off</p>
+                    </div>
+
                     <img src="./IMAGE/dove_conditioner.jpg" alt="Dove Conditioner">
                     <h3>Dove Conditioner</h3>
                     <span>180ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.360.00</div>
+                    <div class="price">Rs.288.00<del>Rs.360.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -237,17 +258,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>14% off</p>
+                    </div>
+
                     <img src="./IMAGE/dove_shampoo.jpg" alt="Dove Shampoo">
                     <h3>Dove Shampoo</h3>
                     <span>180ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.750.00</div>
+                    <div class="price">Rs.645.00<del>Rs.750.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -256,17 +281,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>10% off</p>
+                    </div>
+
                     <img src="./IMAGE/dove_soap.jpg" alt="Dove Soap">
                     <h3>Dove Soap</h3>
                     <span>100g</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.600.00</div>
+                    <div class="price">Rs.540.00<del>Rs.600.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -275,10 +304,13 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/himalyaa-facewash.jpg" alt="Himalaya Facewash">
                     <h3>Himalaya Facewash</h3>
                     <span>100ml</span>
-                    <P>10% off</P>
                     <div class="price">Rs.1190.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
@@ -294,17 +326,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>25% off</p>
+                    </div>
+
                     <img src="./IMAGE/intensive_cream.jpg" alt="Dove Intensive Cream">
                     <h3>Dove Intensive Cream</h3>
                     <span>75ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.1499.00</div>
+                    <div class="price">Rs.1124.75<del>Rs.1499.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -317,17 +353,20 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/baby_soap.jpg" alt="Baby Soap">
                     <h3>Baby Soap</h3>
                     <span>125g</span>
-                    <P>10% off</P>
                     <div class="price">Rs.799.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -336,17 +375,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>12% off</p>
+                    </div>
+
                     <img src="./IMAGE/loreal-conditioner.jpg" alt="Loreal Conditioner">
                     <h3>Loreal Conditioner</h3>
                     <span>400ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.3550.00</div>
+                    <div class="price">Rs.3124.00<del>Rs.3550.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -355,17 +398,20 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/loreal-shampoo.jpg" alt="Loreal Shampoo">
                     <h3>Loreal Shampoo</h3>
                     <span>400ml</span>
-                    <P>10% off</P>
                     <div class="price">Rs.3999.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -374,17 +420,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>10% off</p>
+                    </div>
+
                     <img src="./IMAGE/baby_powder.jpg" alt="Baby Powder">
                     <h3>Baby Powder</h3>
                     <span>100g</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.1125.00</div>
+                    <div class="price">1Rs.1012.50<del>Rs.1125.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -397,17 +447,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>18% off</p>
+                    </div>
+
                     <img src="./IMAGE/baby_soft_cream.jpg" alt="Baby Soft Cream">
                     <h3>Baby Soft Cream</h3>
                     <span>100ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.1675.00</div>
+                    <div class="price">Rs.1373.50<del>Rs.1675.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -416,17 +470,20 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/baby_cologne.jpg" alt="Baby Cologne">
                     <h3>Baby Cologne</h3>
                     <span>100ml</span>
-                    <P>10% off</P>
                     <div class="price">Rs.1790.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -435,17 +492,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
                     <img src="./IMAGE/baby_lotion.jpg" alt="Baby Lotion">
                     <h3>Baby Lotion</h3>
                     <span>300ml</span>
-                    <P>10% off</P>
                     <div class="price">Rs.1830.00</div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -454,17 +515,21 @@
 
                 <td class="box">
 
+                    <div class="off_like-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <p>7% off</p>
+                    </div>
+
                     <img src="./IMAGE/baby_oil.jpeg" alt="Baby Oil">
                     <h3>Baby Oil</h3>
                     <span>300ml</span>
-                    <P>10% off</P>
-                    <div class="price">Rs.2249.00</div>
+                    <div class="price">Rs.2091.57<del>Rs.2249.00</del></div>
                     <div class="stars">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
                     <br>
                     <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>

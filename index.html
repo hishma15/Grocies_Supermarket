@@ -33,13 +33,14 @@
 </head>
 <body>
 
-    <!--header part of the page.-->
+    <!---------------------------Header part of the page.------------------------------->
 
     <header>
 
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
 
+            <!--Logo Image with home page link-->
             <div id="logo_img">
                 <a href="./index.html">
                 <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
@@ -47,13 +48,14 @@
             </div>
 
             <section class="header-1-2">
-                <div>
-                    <form class="search-box">
-                        <input type="search" placeholder="Search for products..." name="search" id="search">
-                        <button type="submit" name="search-button" id="search-button"><span> Search </span><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
 
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"><span> Search </span><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+                <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
                     <select class="location">
@@ -71,18 +73,21 @@
         <!--Navbar,menu-->
         <section class="header-2">
 
+                <!--Menu bar-->
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </label>
 
                 <br>
 
+            <!--Navigation bar-->
             <nav class="navbar">
 
                 <ul class="navigation">
                     <li><a href="./index.html" class="active">HOME</a></li>
                     <li><a href="./aboutus.html">ABOUT US</a></li>
+                    <!--Products options as dropdown-->
                     <li class="dropdown">
 
                         <a href="./products.html">PRODUCTS</a>
@@ -96,6 +101,7 @@
                         </ul>
 
                     </li>
+                    <!--Sign in option as dropdown-->
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
                         <form class="dropdown_login">
@@ -106,12 +112,12 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="text" class="input_field" placeholder="Username or Email">
+                                <input type="text" class="input-field" placeholder="Username or Email">
                                 <i class="fa-solid fa-user"></i>
                             </div>
 
                             <div class="input-box">
-                                <input type="password" class="input_field" placeholder="Password">
+                                <input type="password" class="input-field" placeholder="Password">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
             
@@ -143,18 +149,17 @@
 
     </header>
 
-    <!--main part of the page-->
+    <!-------------------------------------Main part of the page----------------------------------->
 
     <main>
 
         <!--Main image-->
-
         <section class="main_image">
+            <!--Banner image made in https://www.canva.com/-->
             <img src="./IMAGE/banner.jpg" alt="main-image" id="main-image">
         </section>
 
         <!--About our sevices in a ordered list -->
-
         <section class="service_list">
 
             <ul class="service-list">
@@ -194,14 +199,17 @@
             <section class="categories">
 
                 <div class="vegetable">
+                    <!--Image got from https://www.freepik.com/-->
                     <a href="./vegetable.html"><img src="./IMAGE/vegetables-img.jpg" alt="vegetables"></a>
                     <span>VEGETABLES</span>
                 </div>
                 <div class="dairy_products">
+                    <!--Image got from https://www.freepik.com/-->
                     <a href="./dairy-products.html"><img src="./IMAGE/dairy-products.jpg" alt="dairy products"></a>
                     <span>DAIRY PRODUCTS</span>
                 </div>
                 <div class="skincare_products">
+                    <!--Image got from https://www.freepik.com/-->
                     <a href="./skincare-products.html"><img src="./IMAGE/skin-care-products.jpg"></a>
                     <span>COSMETICS AND SKIN CARE PRODUCTS</span>
                 </div>
@@ -223,11 +231,15 @@
                     <!--Product01-->
                     <div class="box">
 
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>10% off</p>
+                        </div>
+
                         <img src="./IMAGE/carrot.jpg" alt="Carrot">
                         <h3>Fresh Carrots</h3>
                         <span>1Kg</span>
-                        <P>10% off</P>
-                        <div class="price">Rs.310.00</div>
+                        <div class="price">Rs.279.00<del>Rs.310.00</del></div>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -243,11 +255,15 @@
                     <!--Product02-->
                     <div class="box">
 
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>15% off</p>
+                        </div>
+
                         <img src="./IMAGE/onion.jpg" alt="Onion">
                         <h3>Fresh Onion</h3>
                         <span>1Kg</span>
-                        <p>15% off</p>
-                        <div class="price">Rs.750.00</div>
+                        <div class="price">Rs.637.50<del>Rs.750.00</del></div>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -265,11 +281,15 @@
                     <!--Product03-->
                     <div class="box">
 
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>10% off</p>
+                        </div>
+
                         <img src="./IMAGE/curd.jpg" alt="Curd">
                         <h3>Curd</h3>
-                        <span>1 </span>
-                        <div class="price">Rs.310.00</div>
-                        <p>10% off</p>
+                        <span>450g</span>
+                        <div class="price">Rs.342.00<del>Rs.380.00</del></div>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -285,11 +305,15 @@
                     <!--Product04-->
                     <div class="box">
 
+                        <div class="off_like-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>10% off</p>
+                        </div>
+
                         <img src="./IMAGE/icecream.jpg" alt="Ice-Cream">
                         <h3>Ice-Cream</h3>
-                        <span>1</span>
-                        <div class="price">Rs.500.00</div>
-                        <p>10% off</p>
+                        <span>480 ml</span>
+                        <div class="price">Rs.4491.00<del>Rs.4990.00</del></div>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -303,27 +327,62 @@
 
                     </div>
 
-
                     <div class="see-more">
                         <a href="./products.html" class="more">SEE MORE <i class="fa-solid fa-angle-right"></i></a>
                     </div>
 
-
                 </section>
-                
-
                 
             </section>
 
         </section>
 
-       <!--Register or Login-->
-       <section class="q_register">
-            <h2>Don't Have an Account ?</h2>
-            <a href="./register.html">
-                REGISTER NOW
-            </a>
-       </section>
+        <!--Register or Login-->
+        <section class="q_register">
+
+            <h1>BUY MORE SAVE MORE</h1>
+            <section class="buy-save-off">
+                <section class="off-price">
+                    <div class="off-range">
+                        <h3>Rs.1500 off</h3>
+                        <p>On your order of Rs.5000 & Rs.7499*</p>
+                    </div>
+                    <div class="off-code">
+                        <p>Use Code</p>
+                        <span>BUY1500</span>
+                    </div>
+                </section>
+
+                <section class="off-price">
+                    <div class="off-range">
+                        <h3>Rs.2500 off</h3>
+                        <p>On your order of Rs.7500 & Rs.10499*</p>
+                    </div>
+                    <div class="off-code">
+                        <p>Use Code</p>
+                        <span>BUY2500</span>
+                    </div>
+                </section>
+
+                <section class="off-price">
+                    <div class="off-range">
+                        <h3>Rs.3500 off</h3>
+                        <p>On your order of Rs.10500*</p>
+                    </div>
+                    <div class="off-code">
+                        <p>Use Code</p>
+                        <span>BUY3500</span>
+                    </div>
+                </section>
+            </section>
+
+            <section class="register-off">
+                <h2>Don't Have an Account ?</h2>
+                <p>Get 40% on your first order!!</p>
+                <a href="./register.html">REGISTER NOW</a>
+            </section>
+            
+        </section>
 
         <!--About the supermarket-->
         <section class="about_supermarket">
@@ -353,7 +412,13 @@
             </div>
             
             <figure class="supermarket_image">
-                <img src="./IMAGE/grocies_image.jpg" alt="picture of the grocies supermarket" id="grocies-img">
+                <picture>
+                    <!--<source srcset="./IMAGE/grocies_image.jpg" media="(max-width: 1200px)">-->
+                    <!--Image got from https://www.pexels.com/-->
+                    <source srcset="./IMAGE/grocies_image-small.jpg" media="(max-width: 750px)">
+                    <img src="./IMAGE/grocies_image.jpg" alt="Picture of the grocies supermarket" id="grocies-img">
+                </picture>
+                <!--<img src="./IMAGE/grocies_image.jpg" alt="picture of the grocies supermarket" id="grocies-img">-->
                 <figcaption>GROCIES SUPERMARKET</figcaption>
             </figure>
 
@@ -371,17 +436,19 @@
             </ol>
         </div>
 
-        <section>
+        <section class="customer_review">
 
             <h2>What Our Beloved Customers</h2>
             <h2>Say About Us!</h2>
 
+            <i class="fa-solid fa-quote-left"></i>
+
             <section class="customer-review">
 
                 <!--Profile photos took from https://www.freepik.com/search?ai=excluded&format=search&last_filter=query&last_value=profile+photo&query=profile+photo&type=photo-->
-                <article class="review">
-                    <img src="./IMAGE/person-1.jpg" alt="Person 1 image">
-                    <div class="review-text">
+                <section class="review">
+                    <div class="reviewer-name">
+                        <img src="./IMAGE/person-1.jpg" alt="Person 1 image">
                         <strong>Olivia Lily</strong>
                     </div>
                     <div class="rating">
@@ -392,37 +459,49 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
 
-                </article>
-
-                <article class="review">
-                    <img src="./IMAGE/person-2.jpg" alt="Person 2 image">
                     <div class="review-text">
+                        <p>Grocies offers a convenient and pleasant shopping experience. The store layout is well-organized, making it easy to find what you need quickly. The variety of products available is impressive, with high-quality options across all departments. The staff is friendly and helpful, enhancing the overall shopping experience. Whether you're picking up groceries or shopping for household items, Grocies Supermarket is a great choice for quality and convenience.</p>
+                    </div>
+
+                </section>
+
+                <section class="review">
+                    <div class="reviewer-name">
+                        <img src="./IMAGE/person-2.jpg" alt="Person 2 image">
                         <strong>William Jack</strong>
                     </div>
                     <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
 
-                </article>
-
-                <article class="review">
-                    <img src="./IMAGE/person-3.jpg" alt="Person 3 image">
                     <div class="review-text">
+                        <p>This is Grocies Supermarket, prices are reasonable but some items are expensive, service is great, all items are well presented. There are a lot of sections, food, frozen, fruit, vegetables, meat, poultry, groceries....</p>
+                    </div>
+
+                </section>
+
+                <section class="review">
+                    <div class="reviewer-name">
+                        <img src="./IMAGE/person-3.jpg" alt="Person 3 image">
                         <strong>Amelia Lucy</strong>
                     </div>
                     <div class="rating">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
+
+                    <div class="review-text">
+                        <p>Grocies Supermarket located at Colombo 3 is one of the best supermarket in Sri Lanka. It contains wide range of products at an affordable price. The staff's are friendly and very helpful in assisting customers. I would recommend this place to all.</p>
+                    </div>
                     
-                </article>
+                </section>
 
             </section>
 
@@ -471,6 +550,7 @@
 
                 </section>
 
+                <!--Footer content 1-->
                 <section class="footer_content">
                     <h3>Categories</h3>
                     <a href="./vegetable.html">vegetables</a>
@@ -481,6 +561,7 @@
                     <a href="#">Baking & cooking Ingrediants</a>
                 </section>
 
+                <!--Footer content 2-->
                 <section class="footer_content">
                     <h3>Our Locations</h3>
                     <a href="#">Colombo 03</a>
@@ -488,6 +569,7 @@
                     <a href="#">Kurunagala</a>
                 </section>
 
+                <!--Footer content 3-->
                 <section class="contact_us">
                     <h3>Contact Us</h3>
                     <p>Phone Number : 081-111-1111</p>

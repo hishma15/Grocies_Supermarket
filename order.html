@@ -40,6 +40,7 @@
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
 
+            <!--Logo Image with home page link-->
             <div id="logo_img">
                 <a href="./index.html">
                 <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
@@ -47,13 +48,14 @@
             </div>
 
             <section class="header-1-2">
-                <div>
-                    <form class="search-box">
-                        <input type="search" placeholder="Search for products..." name="search" id="search">
-                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-
+                
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            
+                <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
                     <select class="location">
@@ -71,13 +73,15 @@
         <!--Navbar,menu-->
         <section class="header-2">
 
+                <!--Menu bar-->
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </label>
 
                 <br>
 
+            <!--Navigation bar-->
             <nav class="navbar">
 
                 <ul class="navigation">
@@ -86,6 +90,7 @@
                     <li class="dropdown">
 
                         <a href="./products.html">PRODUCTS</a>
+                        <!--Products options as dropdown-->
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
@@ -98,6 +103,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
+                        <!--Sign in option as dropdown-->
                         <form class="dropdown_login">
 
                             <div class="head"> 
@@ -106,12 +112,12 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="text" class="input_field" placeholder="Username or Email">
+                                <input type="text" class="input-field" placeholder="Username or Email">
                                 <i class="fa-solid fa-user"></i>
                             </div>
 
                             <div class="input-box">
-                                <input type="password" class="input_field" placeholder="Password">
+                                <input type="password" class="input-field" placeholder="Password">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
             
@@ -254,23 +260,17 @@
                         <label>Enter your delivery Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" placeholder="Delivery Address" required>
                     </div>
-
                     <br>
-
                     <div>
                         <label>Enter your phone number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input type="text" placeholder="Phone Number" required>
                     </div>
-
                     <br>
-
                     <div>
                         <label>Enter your Loyalty card Number: </label>
                         <input type="text" placeholder="Loyalty card Number">
                     </div>
-                
                     <br>
-
                     <div>
                         <input type="submit" value="submit" class="deliver-btn submit">
                         <input type="reset" value="Reset" class="deliver-btn reset">

@@ -39,6 +39,7 @@
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
 
+            <!--Logo Image with home page link-->
             <div id="logo_img">
                 <a href="./index.html">
                 <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
@@ -46,13 +47,14 @@
             </div>
 
             <section class="header-1-2">
-                <div>
-                    <form class="search-box">
-                        <input type="search" placeholder="Search for products..." name="search" id="search">
-                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-
+                
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              
+                <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
                     <select class="location">
@@ -70,21 +72,23 @@
         <!--Navbar,menu-->
         <section class="header-2">
 
+                <!--Menu bar-->
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </label>
 
                 <br>
 
+            <!--Navigation bar-->
             <nav class="navbar">
 
                 <ul class="navigation">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./aboutus.html">ABOUT US</a></li>
                     <li class="dropdown">
-
                         <a href="./products.html" class="active">PRODUCTS</a>
+                        <!--Products options as dropdown-->
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
@@ -97,6 +101,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
+                        <!--Sign in option as dropdown-->
                         <form class="dropdown_login">
 
                             <div class="head"> 
@@ -105,12 +110,12 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="text" class="input_field" placeholder="Username or Email">
+                                <input type="text" class="input-field" placeholder="Username or Email">
                                 <i class="fa-solid fa-user"></i>
                             </div>
 
                             <div class="input-box">
-                                <input type="password" class="input_field" placeholder="Password">
+                                <input type="password" class="input-field" placeholder="Password">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
             
@@ -146,12 +151,12 @@
 
     <main>
 
-        <h2>Dairy Products</h2>
+        <h1> DAIRY PRODUCTS </h1>
 
         <!--https://unacademy.com/content/neet-ug/study-material/biology/dairy-products-and-their-benefits/-->
-        <section class="brief_dairy-products">
+        <section class="product-description">
 
-            <img src="./IMAGE/description-dairy.jpg" alt="Dairy-Products">
+            <img src="./IMAGE/description-dairy.jpg" alt="Dairy-Products" id="dairy-img">
             <p>Dairy products are truly versatile and take a variety of forms—from foods you can bite into or eat with a spoon and beverages you can sip or slurp. Dairy products include a variety of foods such as cheese, yogurt, cream, butter, milk ice-cream and many more. The nutritional value of milk is great, and it consists of nutrients like protein, fat, lactose and other essential biochemical chemicals. Dairy products are necessary for everyday life. Milk keeps up with the development pace of people and furthermore adds to the guideline of biomechanical frameworks.  </p>
 
         </section>
@@ -161,37 +166,45 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>5% off</p>
+                </div>
+
                 <img src="./IMAGE/eggs.jpg" alt="Eggs">
                 <h3>Eggs</h3>
                 <span>10</span>
-                <P>10% off</P>
-                <div class="price">Rs.650.00</div>
+                <div class="price">Rs.617.50<del>Rs.650.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
             </section>
 
             <section class="box">
+
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>12% off</p>
+                </div>
 
                 <img src="./IMAGE/butter.jpg" alt="Butter">
                 <h3>Butter</h3>
                 <span>227 g</span>
-                <P>10% off</P>
-                <div class="price">Rs.1300.00</div>
+                <div class="price">Rs.1144.00<del>Rs.1300.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
@@ -199,94 +212,112 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/cheese.jpg" alt="Cheese">
                 <h3>Cheese</h3>
                 <span>200 g</span>
-                <P>10% off</P>
                 <div class="price">Rs.1790.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
             </section>
 
             <section class="box">
+
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>15% off</p>
+                </div>
 
                 <img src="./IMAGE/ghee.jpg" alt="Ghee">
                 <h3>Ghee</h3>
                 <span>375ml</span><!------------>
-                <P>10% off</P>
-                <div class="price">Rs.2300.00</div>
+                <div class="price">Rs.1955.00<del>Rs.2300.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
             </section>
 
             <section class="box">
+
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>20% off</p>
+                </div>
 
                 <img src="./IMAGE/milk.jpg" alt="Fresh Milk">
                 <h3>Fresh Milk</h3>
                 <span>200ml</span>
-                <P>10% off</P>
-                <div class="price">Rs.150.00</div>
+                <div class="price">Rs.120.00<del>Rs.150.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
             </section>
 
             <section class="box">
+
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
 
                 <img src="./IMAGE/icecream.jpg" alt="Ice-cream">
-                <h3>Magnum Ice-Cream</h3>
+                <h3>Ice-Cream</h3>
                 <span>480 ml</span>
-                <P>10% off</P>
-                <div class="price">Rs.4990.00</div>
+                <div class="price">Rs.4491.00<del>Rs.4990.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
             </section>
 
             <section class="box">
+
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
 
                 <img src="./IMAGE/curd.jpg" alt="Curd">
                 <h3>Curd</h3>
                 <span>450 g</span>
-                <P>10% off</P>
                 <div class="price">Rs.380.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
@@ -294,18 +325,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
+
                 <img src="./IMAGE/cheddar_cheese.jpg" alt="Cheddar Cheese">
                 <h3>Cheddar Cheese</h3>
                 <span>200 g</span>
-                <P>10% off</P>
-                <div class="price">Rs.1780.00</div>
+                <div class="price">Rs.1602.00<del>Rs.1780.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
@@ -313,18 +348,21 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/drinking_yoghurt.jpg" alt="Drinking Youghurt">
                 <h3>Drinking Youghurt</h3><!------------>
                 <span>1</span>
-                <P>10% off</P>
                 <div class="price">Rs.120.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
@@ -332,18 +370,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>20% off</p>
+                </div>
+
                 <img src="./IMAGE/fresh-milk.jpg" alt="Fresh Milk">
                 <h3>Fresh Milk</h3>  <!-------->
                 <span>1l</span>
-                <P>10% off</P>
-                <div class="price">Rs.560.00</div>
+                <div class="price">Rs.448.00<del>Rs.560.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
@@ -351,18 +393,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/whipping_cream.jpg" alt="Whipping Cream">
                 <h3>Whipping Creams</h3>
                 <span>1 l</span>
-                <P>10% off</P>
+
                 <div class="price">Rs.4100.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 
@@ -370,10 +416,13 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/paneer.jpg" alt="Paneer">
                 <h3>Paneer</h3>
                 <span>200g</span>
-                <P>10% off</P>
                 <div class="price">Rs.880.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
@@ -381,7 +430,7 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half"></i>
-                 </div>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
 

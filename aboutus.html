@@ -38,6 +38,7 @@
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
 
+            <!--Logo Image with home page link-->
             <div id="logo_img">
                 <a href="./index.html">
                 <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
@@ -45,13 +46,14 @@
             </div>
 
             <section class="header-1-2">
-                <div>
-                    <form class="search-box">
-                        <input type="search" placeholder="Search for products..." name="search" id="search">
-                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
+                
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>                    
+                </form>
 
+                <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
                     <select class="location">
@@ -68,14 +70,16 @@
 
         <!--Navbar,menu-->
         <section class="header-2">
-
+            
+                <!--Menu bar-->
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </label>
 
                 <br>
 
+            <!--Navigation bar-->
             <nav class="navbar">
 
                 <ul class="navigation">
@@ -84,6 +88,7 @@
                     <li class="dropdown">
 
                         <a href="./products.html">PRODUCTS</a>
+                        <!--Products options as dropdown-->
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
@@ -96,6 +101,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
+                        <!--Sign in option as dropdown-->
                         <form class="dropdown_login">
 
                             <div class="head"> 
@@ -104,12 +110,12 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="text" class="input_field" placeholder="Username or Email">
+                                <input type="text" class="input-field" placeholder="Username or Email">
                                 <i class="fa-solid fa-user"></i>
                             </div>
 
                             <div class="input-box">
-                                <input type="password" class="input_field" placeholder="Password">
+                                <input type="password" class="input-field" placeholder="Password">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
             
@@ -141,7 +147,7 @@
 
     </header>
 
-    <!--Main part of the page-->
+    <!----------------------------Main part of the page------------------------------->
     
     <main>
 
@@ -166,9 +172,16 @@
                 </ul>
 
             </div>
-            <div class="supermarket_image">
-                <img src="./IMAGE/grocies_image2.jpg" alt="picture of the grocies supermarket" id="grocies-img2">
-            </div>
+            <figure class="supermarket_image">
+                <picture>
+                    <!--Image got from https://www.pexels.com/-->
+                    <!--<source srcset="./IMAGE/grocies_image2.jpg" media="(max-width: 1200px)">-->
+                    <source srcset="./IMAGE/grocies_image2-small.jpg" media="(max-width: 750px)">
+                    <img src="./IMAGE/grocies_image2.jpg" alt="picture of the grocies supermarket" id="grocies-img2">
+
+                </picture>
+                <!--<img src="./IMAGE/grocies_image2.jpg" alt="picture of the grocies supermarket" id="grocies-img2">-->
+            </figure>
 
         </section>
 
@@ -184,22 +197,22 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Delivery</td>
-                        <td>Groceries delivered to your door-step</td>
-                        <td>24/7</td>
-                        <td>4.7</td>
+                        <td data-title="Sevices">Delivery</td>
+                        <td data-title="Description">Groceries delivered to your door-step</td>
+                        <td data-title="Availability">24/7</td>
+                        <td data-title="Customer Review (Out of 5)">4.7</td>
                     </tr>
                     <tr>
-                        <td>Catering</td>
-                        <td>Food orders for large number of people</td>
-                        <td>Pre order required</td>
-                        <td>4.9</td>
+                        <td data-title="Sevices">Catering</td>
+                        <td data-title="Description">Food orders for large number of people</td>
+                        <td data-title="Availability">Pre order required</td>
+                        <td data-title="Customer Review (Out of 5)">4.9</td>
                     </tr>
                     <tr>
-                        <td>Party Planning</td>
-                        <td>Party plans done by us</td>
-                        <td>Pre booking required</td>
-                        <td>4.5</td>
+                        <td data-title="Sevices">Party Planning</td>
+                        <td data-title="Description">Party plans done by us</td>
+                        <td data-title="Availability">Pre booking required</td>
+                        <td data-title="Customer Review (Out of 5)">4.5</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -222,7 +235,13 @@
 
                 <div class="branch">
                     <figure>
-                        <img src="./IMAGE/location_1.jpg" alt="Colombo 02 Branch" class="branch-img">
+                        <picture>
+                            <!--Image got from https://www.freepik.com/-->
+                            <!--<source srcset="./IMAGE/location_1.jpg" media="(max-width: 1200px)">-->
+                            <source srcset="./IMAGE/location_1-small.jpg" media="(max-width: 750px)">
+                            <img src="./IMAGE/location_1.jpg" alt="Colombo 03 Branch" class="branch-img">
+                        </picture>
+                        <!--<img src="./IMAGE/location_1.jpg" alt="Colombo 02 Branch" class="branch-img">-->
                         <figcaption>COLOMBO 03 BRANCH</figcaption>
                     </figure>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.756438904931!2d79.85145112395944!3d6.919694218434619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591532540f4b%3A0xf0aa2df4274d0b31!2sColombo%2000200!5e0!3m2!1sen!2slk!4v1715183996820!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -233,7 +252,7 @@
                     
                 <div class="branch-details">
                     <p>Contact Number : +94-11-444-5566</p>
-                    <p>E-mail : grociessupermarketcolombo02@gmail.com</p>
+                    <p>E-mail : grociessupercolombo03@gmail.com</p>
                     <p>Address : 398, High level road, Colombo 2.</p>
                 </div>
 
@@ -245,7 +264,12 @@
 
                 <div class="branch">
                     <figure>
-                        <img src="./IMAGE/location_2.jpg" alt="Kandy Branch" class="branch-img">
+                        <picture>
+                            <!--Image got from https://www.freepik.com/-->
+                            <source srcset="./IMAGE/location_2-small.jpg" media="(max-width: 750px)">
+                            <img src="./IMAGE/location_2.jpg" alt="Kandy Branch" class="branch-img">
+                        </picture>
+                        <!--<img src="./IMAGE/location_2.jpg" alt="Kandy Branch" class="branch-img">-->
                         <figcaption>KANDY BRANCH</figcaption>
                     </figure>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4235.925323179847!2d80.61555276840795!3d7.281088885378762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae368824457ef91%3A0x4f527eac6e11e61c!2sPeradeniya%20Rd%2C%20Kandy!5e0!3m2!1sen!2slk!4v1715184471753!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -255,7 +279,7 @@
 
                 <div class="branch-details">
                     <p>Contact Number : +94-81-444-5566</p>
-                    <p>E-mail : grociessupermarketkandy@gmail.com</p>
+                    <p>E-mail : grociessuperkandy@gmail.com</p>
                     <p>Address : 398, Peradeniya road, Kandy.</p>
                 </div>
 
@@ -267,7 +291,12 @@
 
                 <div class="branch">
                     <figure>
-                        <img src="./IMAGE/location_3.jpg" alt="Kurunagala Branch" class="branch-img">
+                        <picture>
+                            <!--Image got from https://www.freepik.com/-->
+                            <source srcset="./IMAGE/location_3-small.jpg" media="(max-width:750px)">
+                            <img src="./IMAGE/location_3.jpg" alt="Kurunagala Branch" class="branch-img">
+                        </picture>
+                        <!--<img src="./IMAGE/location_3.jpg" alt="Kurunagala Branch" class="branch-img">-->
                         <figcaption>KURUNAGALA BRANCH</figcaption>
                     </figure>    
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15828.851729324271!2d80.00093500830285!3d7.329966006821776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ddf7893b2d31%3A0xe7b9752a3d3ec844!2sNegombo-Kurunegala%20Rd!5e0!3m2!1sen!2slk!4v1715184576544!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -277,7 +306,7 @@
 
                 <div class="branch-details">
                     <p>Contact Number : +94-37-444-5566</p>
-                    <p>E-mail : grociessupermarketkurunagla@gmail.com</p>
+                    <p>E-mail : grociessuperkurunagla@gmail.com</p>
                     <p>Address : 398, Negambo street, Kurunagala.</p>
                 </div>
 

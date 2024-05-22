@@ -1,10 +1,10 @@
-/*Register-page styling*/
 
 :root{
     --clr--blue : #1e2959;
     --clr--green : #00bf63;
     --clr--white : white;
     --clr--light : #dae5f9;
+    --clr--backround--:#dae5f956;
     --clr--dark : #303633;
     --clr--black : #000000;
     --clr--light-gray :#d8d8d8 ;
@@ -16,106 +16,145 @@
 
 }
 
+/*Register-page styling*/
+
 .register{
-    background: url(../IMAGE/registerpage_background_img.png);
+    /*background: url(../IMAGE/registerpage_background_img.png);*/
+
+    /*Background image got from https://www.rawpixel.com/*/
+    background: url(../IMAGE/background-img.png);
     background-size: cover;
+    background-repeat: no-repeat;
 
+    /*background-attachment: fixed;  /*The backround image will not scroll with the page*/
+    
+}
+
+.form_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 
 }
 
-.form-box{
-    position: static; /*if relative, error occured*/
-    height: 500px;
-    background-color:#9eada634;
+.login_form{
+    background-color:var(--clr--backround--);
+    padding: 40px;
+    border-radius: 0 20px 20px 20px;
+   margin-bottom: 20px;
 
 }
 
-.head span{
-    color: var(--clr--light);
+.register_form{
+    background-color: var(--clr--backround--);
+    padding: 40px;
+    border-radius: 0 20px 20px 20px;
+    
+
+}
+
+.top span{
+    color: var(--clr--black);
+    padding: 20px;
+    margin: 10px;
     font-size: small;
-    padding: 10px;
+    
+    /*padding: 15px 0; /*top-bottom and left-right*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.top span a{
+    font-weight: 500;
+    color: var(--clr--black);
+    margin-left: 5px;
+}
+
+.top h2{
+    color: var(--clr--blue);
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.input_name{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.input_field{
+
+    font-size: 15px;
+    background-color: var(--clr--bg-color);
+    /*color: var(--clr--blue);*/
+    height: 30px;
+    width: 93%;
+    padding-left: 22px;
+    /*border: none;*/
+    border: 2px solid var(--clr--dark);
+    border-radius: 0 20px 20px 20px ;
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: var(--clr--dark);
+}
+
+.input_box i{
+    position: relative;
+    z-index: 1;
+    top: -30px;
+    left: 7px;
+}
+
+.form_submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--clr--white);
+    height: 30px;
+    width: 95%;
+    border: 2px solid var(--clr--dark);
+    border-radius: 0 20px 20px 20px;
+    background-color: var(--clr--green);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
 
 }
 
-.head span a{
-    font-weight: 500;  /*Boldness*/
-    color: var(--clr--white);
-    margin-left: 10px;
+.form_submit:hover{
+    background-color: var(--clr--white);
+    color: var(--clr--blue);
 }
 
-.register h1{
-    color: var(--clr--light);
-    text-align: center;
-    padding: 10px 0 30px 0 ; /*top right bottom left*/
-
-}
-
-.input_field{
-    font-size: 15px;
-    background-color: var(--clr--bg-color);
-    height: 35px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    
-    padding: 0 10px 0 50px;
-    border: none;
-    border-radius: 0 20px 20px 20px;
-    outline: none;  /*While clicking the input field the outline will be invisible*/
-    
-}
-
-::-webkit-input-placeholder{
-    color: var(--clr--dark);   /*Input placeholder color*/
-}
-
-.input-box i{
-    position: relative;
-    top:-30px;
-    left: 10px;
-    color: var(--clr--dark);
-   
-}
-
-.submit{
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--clr--black);
-    height: 40px;
-    width: 100%;
-    padding: 0 40px 0 40px;
-    border-radius: 0 20px 20px 20px;
-    border: none;
-    background-color: var(--clr--gray);
-    cursor: pointer;
-
-}
-
-.foot{
+.bottom{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    gap: 10px;
+}
+
+.bottom .col-two{
     font-size: small;
-    color: var(--clr--white);
-
 }
 
-.foot .one{
-    display: flex;
-    gap: 5px;   /*Between box and text*/
-
-}
-
-.two label a{
+.bottom .col-two a{
     text-decoration: none;
     color: var(--clr--white);
 }
 
-.two label a:hover{
-    text-decoration: underline;
+.bottom .col-two a:hover{
+    text-decoration: underline ;
 }
+
 
 
 /*ORDER PAGE STYLINGS*/
@@ -350,6 +389,10 @@ main{
     color: var(--clr--white);
     cursor: pointer;
 
+}
+
+.final-checkout:hover{
+    background-color: #05b15e;
 }
 
 

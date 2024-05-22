@@ -41,6 +41,7 @@
         <!--Logo, SearchBar, Location-->
         <section class="header-1">
 
+            <!--Logo Image with home page link-->
             <div id="logo_img">
                 <a href="./index.html">
                 <img src="./IMAGE/supermarket-logo.png" alt="Grocies Supermarket Logo" id="logo-image">
@@ -48,13 +49,14 @@
             </div>
 
             <section class="header-1-2">
-                <div>
-                    <form class="search-box">
-                        <input type="search" placeholder="Search for products..." name="search" id="search">
-                        <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-
+                
+                <!--Search bar-->
+                <form class="search-box">
+                    <input type="search" placeholder="Search for products..." name="search" id="search">
+                    <button type="submit" name="search-button" id="search-button"> <span> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+                <!--Location selecting option-->
                 <div class="select_location">
                     <i class="fa-solid fa-location-dot"></i>
                     <select class="location">
@@ -72,13 +74,15 @@
         <!--Navbar,menu-->
         <section class="header-2">
 
+                <!--Menu bar-->
                 <input type="checkbox" id="menu-bar">
                 <label for="menu-bar" class="menu">
-                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </label>
 
                 <br>
 
+            <!--Navigation bar-->
             <nav class="navbar">
 
                 <ul class="navigation">
@@ -87,6 +91,7 @@
                     <li class="dropdown">
 
                         <a href="./products.html" class="active">PRODUCTS</a>
+                        <!--Products options as dropdown-->
                         <ul class="dropdown_products">
                             <li><a href="./vegetable.html">Vegetables</a></li>
                             <li><a href="./dairy-products.html">Dairy Products</a></li>
@@ -99,6 +104,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="./register.html">REGISTER/LOGIN</a>
+                        <!--Sign in option as dropdown-->
                         <form class="dropdown_login">
 
                             <div class="head"> 
@@ -107,12 +113,12 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="text" class="input_field" placeholder="Username or Email">
+                                <input type="text" class="input-field" placeholder="Username or Email">
                                 <i class="fa-solid fa-user"></i>
                             </div>
 
                             <div class="input-box">
-                                <input type="password" class="input_field" placeholder="Password">
+                                <input type="password" class="input-field" placeholder="Password">
                                 <i class="fa-solid fa-lock"></i>
                             </div>
             
@@ -150,22 +156,38 @@
 
         <h1> VEGETABLES </h1>
 
+        <!--Description about our vegetables-->  <!--https://livelife.lk/-->
+        <section class="product-description">
+
+            <img src="./IMAGE/description-veg.jpg" alt="Vegetables" id="veg-img">
+            <div>
+                <p>Are you looking for Certified Fresh Organic Vegetables in Sri Lanka? Buy Fresh Organic Vegetables at Grocies Supermarket. Check Prices and Buy & Order online your needs.</p>
+                <p> While there's great momentum for organic sales, the overwhelming reason people give for not purchasing it is since it's too expensive. Organic Vegetables are well-known for being good for our health. Most vegetables are low in calories but high in minerals, vitamins, and fiber.</p>
+                <p> Some vegetables stand out from the rest with additional proven health benefits. Such as the ability to fight inflammation or reduce the risk of disease.</p>
+                <p> Agricultural products - grown without the support of any synthetic pesticides, artificial fertilizers,  or  bio-engineered genes. Also known as organic products.</p>
+            </div>
+        </section>
+
         <!--Vegetables arranged using grid-->
         <section class="vegetable_products">
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
+
                 <img src="./IMAGE/carrot.jpg" alt="Carrot">
                 <h3>Fresh Carrots</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.270.00</div>
+                <div class="price">Rs.279.00<del>Rs.310.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                  </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
@@ -174,18 +196,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>15% off</p>
+                </div>
+
                 <img src="./IMAGE/onion.jpg" alt="Onion">
                 <h3>Onions</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.420.00</div>
+                <div class="price">Rs.357.00<del>Rs.420.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>                
 
@@ -193,17 +219,20 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/potato.jpg" alt="Potato">
                 <h3>Fresh Potatoes</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.370.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-solid fa-star"></i>
                  </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>              
@@ -212,18 +241,21 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/brinjal.jpg" alt="Brinjal">
                 <h3>Fresh Brinjals</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.330.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>      
 
@@ -231,18 +263,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
+
                 <img src="./IMAGE/green_chilli.jpg" alt="Green Chilli">
                 <h3>Fresh Green Chillies</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.250.00</div>
+                <div class="price">Rs.225.00<del>Rs.250.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>        
 
@@ -250,37 +286,44 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>20% off</p>
+                </div>
+
                 <img src="./IMAGE/cauliflower.jpg" alt="Cauliflower">
                 <h3>Fresh Cauliflower</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.1100.00</div>
+                <div class="price">880.00<del>Rs.1100.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>               
 
             </section>
 
             <section class="box">
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>15% off</p>
+                </div>
 
                 <img src="./IMAGE/beans.jpg" alt="Beans">
                 <h3>Fresh Beans</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.380.00</div>
+                <div class="price">Rs.323.00<del>Rs.380.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>              
 
@@ -288,18 +331,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
+
                 <img src="./IMAGE/cucumber.jpeg" alt="Cucumber">
                 <h3>Fresh Cucumber</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.290.00</div>
+                <div class="price">Rs.261.00<del>Rs.290.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>            
 
@@ -307,18 +354,21 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/tomato.jpg" alt="Tomato">
                 <h3>Fresh Tomatoes</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.480.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>             
 
@@ -326,37 +376,43 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/broccoli.jpeg" alt="Broccoli">
                 <h3>Fresh Broccoli</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.1220.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>               
 
             </section>
 
             <section class="box">
+
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
 
                 <img src="./IMAGE/beetroot.jpeg" alt="Beetroot">
                 <h3>Fresh Beetroot</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.390.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>               
 
@@ -364,18 +420,21 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/pumkin.jpg" alt="Pumkin">
                 <h3>Fresh Pumkin</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.390.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>         
 
@@ -383,18 +442,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
+
                 <img src="./IMAGE/raddish.jpg" alt="Raddish">
                 <h3>Fresh Raddish</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.480.00</div>
+                <div class="price">Rs.432.00<del>Rs.480.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>                
 
@@ -402,18 +465,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>14% off</p>
+                </div>
+
                 <img src="./IMAGE/ladies_finger.jpeg" alt="Ladies Finger">
                 <h3>Ladies Finger</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.160.00</div>
+                <div class="price">Rs.137.60<del>Rs.160.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>        
 
@@ -421,18 +488,21 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+
                 <img src="./IMAGE/garlic.jpg" alt="Garlic">
                 <h3>Garlic</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
                 <div class="price">Rs.960.00</div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i>
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>           
 
@@ -440,18 +510,22 @@
 
             <section class="box">
 
+                <div class="off_like-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>10% off</p>
+                </div>
+
                 <img src="./IMAGE/ginger.jpg" alt="Ginger">
                 <h3>Ginger</h3>
                 <span>1Kg</span>
-                <P>10% off</P>
-                <div class="price">Rs.3900.00</div>
+                <div class="price">Rs.3510.00<del>Rs.3900.00</del></div>
                 <div class="stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                 </div>
+                    <i class="fa-regular fa-star"></i> 
+                </div>
                 <br>
                 <a href="./order.html" class="btn"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>       
 
@@ -460,14 +534,9 @@
 
         </section>
 
-        <!--Description about our vegetables-->  <!--https://livelife.lk/-->
-        <section class="veg-discription">
+        <section class="provider-intro">
 
-            <img src="./IMAGE/description-veg.jpg" alt="Vegetables">
-            <p>Are you looking for Certified Fresh Organic Vegetables in Sri Lanka? Buy Fresh Organic Vegetables at Grocies Supermarket. Check Prices and Buy & Order online your needs.</p>
-            <p> While there's great momentum for organic sales, the overwhelming reason people give for not purchasing it is since it's too expensive. Organic Vegetables are well-known for being good for our health. Most vegetables are low in calories but high in minerals, vitamins, and fiber.</p>
-            <p> Some vegetables stand out from the rest with additional proven health benefits. Such as the ability to fight inflammation or reduce the risk of disease.</p>
-            <p> Agricultural products - grown without the support of any synthetic pesticides, artificial fertilizers,  or  bio-engineered genes. Also known as organic products.</p>
+            <h1>Our vegetable suppliers</h1>
 
             <p>Grocies Supermarket is providing you Fresh & Organic Vegetables which are getting from reliable companies for our customers. </p>
             <P>The Fresh & Organic vegetable providing companies are,</P>
@@ -488,15 +557,17 @@
 
             <article class="provider">
 
-                <div class="paragraph">
+                <section class="paragraph">
                     <p>Saaraketha is an organically certified, socially responsible business that operates in Sri Lanka having EU, USDA and JAS certifications; They have been empowering rural farmer communities during the last 7 years. Saaraketha is a catalyst that empowers rural small holder farmers to embrace sustainable methods of production. Their faith in sustainable growth; that man and nature can co-exist in harmony, fuels their passion to empower the local farming communities by transferring knowledge, entrepreneurship and facilitating access to technology to bring about dignity to the vocation of farming. They cater to an international client base with products ranging from fresh fruits & vegetables, heirloom rice and spices & herbs.</p>
-                    <p>Address : #394, 1St Floor, Pannipitiya Road, Palawatta, Thalangama South, Battaramulla, Sri Lanka</p>
-                    <p>Telephone : (94) 11 2077 997 -8/9</p>
-                    <a href="http://www.saaraketha.com/" target="_blank">For more infomation</a>
-                </div>
+                    <div class="details">
+                        <p>Address : #394, 1St Floor, Pannipitiya Road, Palawatta, Thalangama South, Battaramulla, Sri Lanka</p>
+                        <p>Telephone : (94) 11 2077 997 -8/9</p>
+                        <a href="http://www.saaraketha.com/" target="_blank"><em>For more infomation</em></a>
+                    </div>
+                </section>
 
-                <div class="details">
-                    <img src="./IMAGE/saaraketha.jpg" alt="Saaraketha Holdings pvt ltd">
+                <div>
+                    <img src="./IMAGE/saaraketha.jpg" alt="Saaraketha Holdings pvt ltd" class="provider-logo">
                 </div>
 
             </article>
@@ -505,15 +576,17 @@
 
             <article class="provider">
 
-                <div class="paragraph">
+                <section class="paragraph">
                     <p>At Barakah Expo, They are passionate about connecting people around the world with the finest and freshest fruits and vegetables nature has to offer. With their commitment to quality and sustainability, we meticulously source and export a wide variety of premium produce. From succulent tropical fruits to crisp garden vegetables, they take pride in delivering nature's bounty to your doorstep. Discover the flavors and wholesomeness of their carefully selected produce and experience the true essence of farm-fresh goodness.</p>
-                    <p>Address : No. 433, Kanamulla North, Madurankuliya, Sri Lanka.</p>
-                    <p>Telephone : (94) 0322268035</p>
-                    <a href="https://barakah.lk" target="_blank">For more information</a>
-                </div>
+                    <div class="details">
+                        <p>Address : No. 433, Kanamulla North, Madurankuliya, Sri Lanka.</p>
+                        <p>Telephone : (94) 0322268035</p>
+                        <a href="https://barakah.lk" target="_blank"><em>For more information</em></a>
+                    </div>
+                </section>
 
-                <div class="details">
-                    <img src="./IMAGE/barakah.jpg" alt="Barakah Expo">
+                <div>
+                    <img src="./IMAGE/barakah.jpg" alt="Barakah Expo" class="provider-logo">
                 </div>
 
             </article>
@@ -522,17 +595,19 @@
 
             <article class="provider">
 
-                <div class="paragraph">
+                <section class="paragraph">
                     <p>Alwis Agro Exporters is an well reputed Exporters of Quality Vegetables, Leafy Vegetables, Fresh Fruits & Kovil Items since 1999. All our farms located in areas which provide best fruit and vegetable varieties and all farms are registered with Sri Lanka Department of Agriculture.
                         In addition Alwis Agro Exporters work with each individual grower to ensure they produce the freshest fruits and they then ensure the whole steps of the process up to the end customer.
                         Their fresh vegetables & fruits are selected and bought from the farms in cool transport. Their major exports are to the European countries and middle east markets. </p>
-                    <p>Address : 37/1 Negombo Road Kurana Katunayake, Sri Lanka.</p>
-                    <p>Telephone : (94) 31-2223898 or (94) 77-7845511</p>
-                    <a href="https://alwisagro.net/" target="_blank">For more information</a>
-                </div>    
+                    <div class="details">
+                        <p>Address : 37/1 Negombo Road Kurana Katunayake, Sri Lanka.</p>
+                        <p>Telephone : (94) 31-2223898 or (94) 77-7845511</p>
+                        <a href="https://alwisagro.net/" target="_blank"><em>For more information</em></a>
+                    </div>
+                </section>    
                 
-                <div class="details">
-                    <img src="./IMAGE/alwis_agro_expo.jpg" alt="Alwis Agro pvt ltd">
+                <div>
+                    <img src="./IMAGE/alwis_agro_expo.jpg" alt="Alwis Agro pvt ltd" class="provider-logo">
                 </div>
 
             </article>
